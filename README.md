@@ -14,7 +14,7 @@ A small Chrome extension / sidepanel that uses local AI-like helpers to generate
 
 ## Quick install (Load unpacked extension)
 
-1. Open Chrome (or Edge)
+1. Open Chrome 
 2. Go to `chrome://extensions`
 3. Enable "Developer mode" (top-right)
 4. Click "Load unpacked" and select this project folder (the folder that contains `manifest.json`, e.g. `GCK`)
