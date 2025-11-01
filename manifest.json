@@ -1,0 +1,39 @@
+{
+"manifest_version": 3,
+"name": "Global Citizen Kit (GCK)",
+"version": "1.0",
+"description": "Your personalized tutor for global understanding — powered by Chrome AI APIs.",
+"permissions": [
+"activeTab",
+"sidePanel",
+"storage",
+"contextMenus",
+"scripting"
+],
+"host_permissions": ["<all_urls>"],
+"background": {
+"service_worker": "background.js"
+},
+"action": {
+"default_title": "Open Global Citizen Kit",
+"default_icon": {
+"16": "icons/globe16.png",
+"48": "icons/globe48.png"
+}
+},
+"side_panel": {
+"default_path": "sidepanel.html"
+},
+"content_scripts": [
+{
+"matches": ["<all_urls>"],
+"js": ["content.js"]
+}
+],
+"web_accessible_resources": [
+  {
+    "resources": ["writer.html", "writer.js", "sidepanel.css"],
+    "matches": ["<all_urls>"]
+  }
+]
+}

@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<style>
+  #country-section {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+  padding: 8px;
+}
+
+#country-section h2 {
+  color: #0066cc;
+  margin-bottom: 8px;
+}
+
+#country-section strong {
+  color: #333;
+}
+
+#country-section ul {
+  margin-left: 20px;
+}
+
+#country-section p {
+  margin-bottom: 6px;
+}
+
+
+</style>
+
+
+<div id="translator-controls" style="margin-bottom: 8px;">
+  <label for="language-select">Translate to:</label>
+  <select id="language-select">
+    <option value="hi">Hindi</option>
+    <option value="fr">French</option>
+    <option value="es">Spanish</option>
+    <option value="ja">Japanese</option>
+    <option value="de">German</option>
+    <option value="en">English</option>
+  </select>
+</div>
+
+
+
+<div id="buttons">
+    <button id="new-country">New Country</button>
+    <button id="more-detail">More Detail</button>
+    <button id="translate-brief">Translate Brief</button>
+  </div>
+
+  <hr />
+  <div id="toolbar">
+  <button id="summarizer" title="Summarizer">
+    <img src="icons/book.png" width="24">
+  </button>
+  <button id="translator" title="Translator">
+    <img src="icons/speech.png" width="24">
+  </button>
+  <button id="writer" title="Writer">
+    <img src="icons/pencil.png" width="24">
+  </button>
+  <button id="rewriter" title="Rewriter">
+    <img src="icons/refresh.png" width="24">
+  </button>
+  <button id="proofreader" title="Proofreader">
+    <img src="icons/checkmark.png" width="24">
+  </button>
+  <button id="lang-detector" title="Language Detector">
+    <img src="icons/magnifier.png" width="24">
+  </button>
+</div>
+  <div id="output"></div>
+</div>
+<div id="country-section">
+  <h2 id="country-name">Welcome</h2>
+  <div id="culture-capsule"></div>
+  <div id="global-voice"></div>
+  <div id="essential-phrase"></div>
+</div>
+
+<!-- Writer modal removed from inline HTML; modal is constructed dynamically by `sidepanel.js` -->
+
+
+<script src="sidepanel.js"></script>

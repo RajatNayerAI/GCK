@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Writer</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <h2>✍️ Global Writer</h2>
+
+    <label>🌐 Language:</label>
+    <select id="write-language" class="dropdown">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="es">Spanish</option>
+      <option value="ja">Japanese</option>
+    </select>
+
+    <label>🧭 What to Generate:</label>
+    <select id="write-topic" class="dropdown">
+      <option value="brief">Country Brief</option>
+      <option value="poem">Poem about the Country</option>
+      <option value="travel">Top Travel Places</option>
+    </select>
+
+    <button id="generate-write" class="gen-btn">✨ Generate</button>
+
+    <textarea id="write-output" class="write-textarea" placeholder="Your generated text will appear here..."></textarea>
+
+    <div class="btn-group">
+      <button id="copy-write" class="small-btn">📋 Copy</button>
+      <button id="rewrite-write" class="small-btn">🔁 Rewrite</button>
+    </div>
+
+    <script src="writer.js"></script>
+  </body>
+</html>
