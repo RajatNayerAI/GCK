@@ -1,4 +1,4 @@
-# GCK — Global Culture Kit (Chrome extension)
+# GCK — Global Citizen Kit (Chrome extension)
 
 A small Chrome extension / sidepanel that uses local AI-like helpers to generate cultural briefs, translations, summarization and a lightweight writer modal. Designed as a hackathon project to demo in-panel AI features and an on-demand writer modal.
 
